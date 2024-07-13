@@ -51,7 +51,13 @@ return require('packer').startup(function(use)
         "folke/tokyonight.nvim",
         as = "tokyonight",
     }
-
+    use {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function()
+            require("nvim-autopairs").setup {}
+        end
+    }
 
 end)
 
