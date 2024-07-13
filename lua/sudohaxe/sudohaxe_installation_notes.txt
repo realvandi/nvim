@@ -7,6 +7,8 @@ Installed:
 -ripgrep
 -Neovim 0.10.0
 
+[ Note ] I've tried installing my nvim configurations in Ubuntu releases, but kept on hitting roadblocks. Best result was in 24.04
+
 ==========================================================================================
 
 Step 1. Install packer(You can do this anywhere)
