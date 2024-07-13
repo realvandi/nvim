@@ -1,3 +1,7 @@
 Ensure that ripgrep has been installed so grep works(<leader>ps)
 
-brew install ripgrep
+    `
+    brew install ripgrep
+    `
+
+In order to install LSP servers, simply use the command :Mason
