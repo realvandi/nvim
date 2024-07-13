@@ -7,7 +7,16 @@ Installed:
 -ripgrep
 -Neovim 0.10.0
 
-[ Note ] I've tried installing my nvim configurations in Ubuntu releases, but kept on hitting roadblocks. Best result was in 24.04
+[ Note ] I've tried installing my nvim configurations in Ubuntu releases, but kept on hitting roadblocks. 
+
+Working Ubuntu environment: 
+24.04 LTS
+NPM installed
+ripgrep installed
+Packer installed
+nvim 0.9.5
+LuaJIT 2.1.1703358377
+
 
 ==========================================================================================
 
