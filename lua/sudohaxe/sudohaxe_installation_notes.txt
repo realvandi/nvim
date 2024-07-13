@@ -1,0 +1,3 @@
+Ensure that ripgrep has been installed so grep works
+
+brew install ripgrep
