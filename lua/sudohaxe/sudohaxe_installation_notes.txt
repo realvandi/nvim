@@ -1,7 +1,70 @@
-Ensure that ripgrep has been installed so grep works(<leader>ps)
+Sudohaxe Neovim Installation Manual
 
+Tested on MacOS 14.4.1
+
+Installed:
+-NPM 
+-ripgrep
+-Neovim 0.10.0
+
+==========================================================================================
+
+Step 1. Install packer(You can do this anywhere)
+
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+------------------------------------------------------------------------------------------
+
+==========================================================================================
+
+Step 2. Install nvim 
+
+`brew install neovim` or `sudo apt-get install neovim`
+
+[ Troubleshoot ] neovim not found: `sudo apt update`
+
+------------------------------------------------------------------------------------------
+
+==========================================================================================
+
+Step 2a. Check config file location
+
+`:h rtp`
+
+Ensure that `~/.config/nvim` is available, make it if it's not there.
+
+[ Reminder ] Default neovim explorer is `:Exp`
+
+------------------------------------------------------------------------------------------
+
+==========================================================================================
+
+Step 3. Clone nvim configuration into nvim config location. UNIX default is ~/.config/nvim
+Nvim configuration is available under:
+
+https://github.com/realvandi/nvim.git
+
+------------------------------------------------------------------------------------------
+
+==========================================================================================
+
+Step 4. Install packer plugins:
+    1. Navigate to packer.lua
+    2. Run `:so`
+    3. Run `:PackerSync`
+
+------------------------------------------------------------------------------------------
+
+Ensure that ripgrep has been installed so grep works(<leader>ps)
     `
     brew install ripgrep
     `
+    or
+    `
+    sudo apt-get install ripgrep
+    `
+------------------------------------------------------------------------------------------
 
 In order to install LSP servers, simply use the command :Mason
+Navigate to the language you'd like to install, and hit `i`
