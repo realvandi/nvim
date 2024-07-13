@@ -2,11 +2,17 @@ export const Page = () => {
     return;
 }
 
-const helloWorld = () => {
+export const helloWorld = () => {
     console.log("Foo") 
     if(true){
         console.log("hello world")
     }
+}
+
+export const foo = ( bar: number ) => {
+    let result: number;
+    result = bar * 2;
+    return result;
 }
 
 export default Page;
