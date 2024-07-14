@@ -51,6 +51,8 @@ return require('packer').startup(function(use)
         "folke/tokyonight.nvim",
         as = "tokyonight",
     }
+    use { "rose-pine/neovim", as = "rose-pine" }
+
     use {
         "windwp/nvim-autopairs",
         event = "InsertEnter",
