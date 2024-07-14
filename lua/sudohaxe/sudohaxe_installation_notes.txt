@@ -1,19 +1,25 @@
+========================================
 Sudohaxe Neovim Installation Manual
+========================================
 
-Tested on MacOS 14.4.1
+Tested on MacOS:
+14.4.1
+NPM installed
+ripgrep installed
+packer installed
+nvim 0.10.0
 
-Installed:
--NPM 
--ripgrep
--Neovim 0.10.0
-
-Working Ubuntu environment: 
+Tested on Ubuntu: 
 24.04 LTS
 NPM installed
 ripgrep installed
 Packer installed
 nvim 0.9.5
 LuaJIT 2.1.1703358377
+
+Tested on Ubuntu:
+20.04 LTS
+nvim 0.10.0
 
 
 ==========================================================================================
@@ -23,18 +29,15 @@ Step 1. Install packer(You can do this anywhere)
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
-------------------------------------------------------------------------------------------
-
 ==========================================================================================
 
 Step 2. Install nvim 
 
-`brew install neovim` or `sudo apt-get install neovim`
+`brew install neovim` or `sudo apt-get install neovim` or `sudo snap install neovim`
 
+[ IMPORTANT ]    try to get the latest version of nvim
 [ Troubleshoot ] neovim not found: `sudo apt update`
 [ Troubleshoot ] neovim version not 0.10.0: Use snap to install nvim
-
-------------------------------------------------------------------------------------------
 
 ==========================================================================================
 
@@ -42,27 +45,26 @@ Step 2a. Check config file location
 
 `:h rtp`
 
-Ensure that `~/.config/nvim` is available, make it if it's not there.
-
+[ UNIX ] UNIX default is ~/.config/nvim. Make the directory if it's not there yet. 
 [ Reminder ] Default neovim explorer is `:Exp`
-
-------------------------------------------------------------------------------------------
 
 ==========================================================================================
 
-Step 3. Clone nvim configuration into nvim config location. UNIX default is ~/.config/nvim
+Step 3. Clone nvim configuration into nvim config location. 
+
 Nvim configuration is available under:
 
 https://github.com/realvandi/nvim.git
 
-------------------------------------------------------------------------------------------
+[ Note ] As of 14.07.24, the git repository contains a folder "nvim", which is supposed to be the "nvim" directory within the ".config" directory(for UNIX)
 
 ==========================================================================================
 
 Step 4. Install packer plugins:
-    1. Navigate to packer.lua
+    1. Navigate to `packer.lua`
     2. Run `:so`
     3. Run `:PackerSync`
+        3b. Plugins should be installed successfully.
 
 ------------------------------------------------------------------------------------------
 
@@ -78,3 +80,6 @@ Ensure that ripgrep has been installed so grep works(<leader>ps)
 
 In order to install LSP servers, simply use the command :Mason
 Navigate to the language you'd like to install, and hit `i`
+On first install of the nvim configuration, gcc, tsserver, etc. might not be installed yet. It will be necessary to install these to remove the error messages.
+
+
