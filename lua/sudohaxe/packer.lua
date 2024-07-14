@@ -45,12 +45,14 @@ return require('packer').startup(function(use)
         end
     })
 
+
+    use{'bluz71/vim-moonfly-colors', as = 'moonfly'}
     use { "catppuccin/nvim", as = "catppuccin" }
     use {"folke/tokyonight.nvim", as = "tokyonight"}
     use { "rose-pine/neovim", as = "rose-pine" }
     use { "EdenEast/nightfox.nvim" , as = "nightfox"}
+    use { "diegoulloao/neofusion.nvim", as = "neofusion" }
     -- @sudohaxe personal favorite: Carbonfox
-
     use {
         "windwp/nvim-autopairs",
         event = "InsertEnter",
@@ -115,6 +117,7 @@ return require('packer').startup(function(use)
                         { desc = " Terminal", group = 'DashboardShortcut', key = '2', action = ':term' },
                         { desc = " Dark Mode", group = 'DashboardShortcut', key = '3', action = ':colorscheme carbonfox' },
                         { desc = " Light Mode", group = 'DashboardShortcut', key = '4', action = ':colorscheme rose-pine-dawn' },
+                        { desc = "󱤓 Cyberpunk", group = 'DashboardShortcut', key = '5', action = ':colorscheme neofusion' },
                     },
                     footer = {"1_000_000 BUGS!!"} 
                 }
