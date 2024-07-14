@@ -2,6 +2,7 @@ require("sudohaxe.remap")
 require("sudohaxe.set")
 
 print("Welcome to @sudohaxe's Nvim!")
+print("Recommended font to use: 0xProto")
 print("================================================")
 print("Enabled:")
 print("================================================")
