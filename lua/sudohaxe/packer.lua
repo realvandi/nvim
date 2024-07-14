@@ -83,6 +83,17 @@ return require('packer').startup(function(use)
     })
 
     use {
+        'nvimdev/dashboard-nvim',
+        event = 'VimEnter',
+        config = function()
+            require('dashboard').setup {
+                -- config
+            }
+        end,
+        requires = {'nvim-tree/nvim-web-devicons'}
+    }
+
+    use {
         'doctorfree/cheatsheet.nvim',
 
         requires = {
