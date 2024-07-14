@@ -7,8 +7,6 @@ Installed:
 -ripgrep
 -Neovim 0.10.0
 
-[ Note ] I've tried installing my nvim configurations in Ubuntu releases, but kept on hitting roadblocks. 
-
 Working Ubuntu environment: 
 24.04 LTS
 NPM installed
@@ -34,6 +32,7 @@ Step 2. Install nvim
 `brew install neovim` or `sudo apt-get install neovim`
 
 [ Troubleshoot ] neovim not found: `sudo apt update`
+[ Troubleshoot ] neovim version not 0.10.0: Use snap to install nvim
 
 ------------------------------------------------------------------------------------------
 
