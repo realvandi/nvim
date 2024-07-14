@@ -13,5 +13,6 @@ vim.opt.incsearch = true
 
 vim.g.mapleader = " "
 
-vim.cmd("colorscheme carbonfox")
+-- Set default color scheme here
+vim.cmd("colorscheme mgz")
 

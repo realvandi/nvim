@@ -52,6 +52,7 @@ return require('packer').startup(function(use)
     use { "rose-pine/neovim", as = "rose-pine" }
     use { "EdenEast/nightfox.nvim" , as = "nightfox"}
     use { "diegoulloao/neofusion.nvim", as = "neofusion" }
+    use { 'stankovictab/mgz.nvim' , as = "mgz"}
     -- @sudohaxe personal favorite: Carbonfox
     use {
         "windwp/nvim-autopairs",
@@ -118,6 +119,7 @@ return require('packer').startup(function(use)
                         { desc = " Dark Mode", group = 'DashboardShortcut', key = '3', action = ':colorscheme carbonfox' },
                         { desc = " Light Mode", group = 'DashboardShortcut', key = '4', action = ':colorscheme rose-pine-dawn' },
                         { desc = "󱤓 Cyberpunk", group = 'DashboardShortcut', key = '5', action = ':colorscheme neofusion' },
+                        { desc = "🕶️ Ultradark", group = 'DashboardShortcut', key = '6', action = ':colorscheme mgz' },
                     },
                     footer = {"1_000_000 BUGS!!"} 
                 }
