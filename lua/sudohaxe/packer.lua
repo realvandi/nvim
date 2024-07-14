@@ -49,6 +49,8 @@ return require('packer').startup(function(use)
     use { "catppuccin/nvim", as = "catppuccin" }
     use {"folke/tokyonight.nvim", as = "tokyonight"}
     use { "rose-pine/neovim", as = "rose-pine" }
+    use { "EdenEast/nightfox.nvim" , as = "nightfox"}
+    -- @sudohaxe personal favorite: Carbonfox
 
     use {
         "windwp/nvim-autopairs",

@@ -82,4 +82,7 @@ In order to install LSP servers, simply use the command :Mason
 Navigate to the language you'd like to install, and hit `i`
 On first install of the nvim configuration, gcc, tsserver, etc. might not be installed yet. It will be necessary to install these to remove the error messages.
 
+------------------------------------------------------------------------------------------
+
+Color schemes do not work with MacOS's default terminal. Use an emulator, such as iTerm2.
 
