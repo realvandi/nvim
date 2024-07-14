@@ -110,6 +110,12 @@ return require('packer').startup(function(use)
                         '░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░ ',
                         ' ',
                     }, 
+                    shortcut = {
+                        { desc = " File Tree", group = 'DashboardShortcut', key = '1', action = ':Neotree' },
+                        { desc = " Terminal", group = 'DashboardShortcut', key = '2', action = ':term' },
+                        { desc = " Dark Mode", group = 'DashboardShortcut', key = '3', action = ':colorscheme carbonfox' },
+                        { desc = " Light Mode", group = 'DashboardShortcut', key = '4', action = ':colorscheme rose-pine-dawn' },
+                    },
                     footer = {"1_000_000 BUGS!!"} 
                 }
             })
