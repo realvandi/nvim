@@ -15,3 +15,6 @@ vim.api.nvim_set_keymap("i", "<S-Tab>", "<C-\\><C-N>v<<C-\\><C-N>^i", {noremap =
 vim.api.nvim_set_keymap("n", "<leader>bn", "<CMD>bn<CR>", {noremap = true})
 vim.api.nvim_set_keymap("n", "<leader>bp", "<CMD>bp<CR>", {noremap = true})
 vim.api.nvim_set_keymap("n", "<leader>bd", "<CMD>bd<CR>", {noremap = true})
+
+--Search and replace current word in normal mode, gc
+vim.api.nvim_set_keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gc<Left><Left><Left>]], {noremap = true})
