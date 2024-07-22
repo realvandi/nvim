@@ -18,3 +18,9 @@ vim.api.nvim_set_keymap("n", "<leader>bd", "<CMD>bd<CR>", {noremap = true})
 
 --Search and replace current word in normal mode, gc
 vim.api.nvim_set_keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gc<Left><Left><Left>]], {noremap = true})
+
+-- Remap to open diagnostics in a floating window
+vim.api.nvim_set_keymap('n', '<leader>e', ':lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = true })
+
+-- Remap to set location list with diagnostics
+vim.api.nvim_set_keymap('n', '<leader>q', ':lua vim.diagnostic.setloclist()<CR>', { noremap = true, silent = true })
