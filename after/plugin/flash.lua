@@ -4,9 +4,9 @@ vim.keymap.set("n", "s", function() flash.jump() end, { desc = "Flash" })
 vim.keymap.set("x", "s", function() flash.jump() end, { desc = "Flash" })
 vim.keymap.set("o", "s", function() flash.jump() end, { desc = "Flash" })
 
-vim.keymap.set("n", "S", function() flash.treesitter() end, { desc = "Flash Treesitter" })
-vim.keymap.set("x", "S", function() flash.treesitter() end, { desc = "Flash Treesitter" })
-vim.keymap.set("o", "S", function() flash.treesitter() end, { desc = "Flash Treesitter" })
+-- vim.keymap.set("n", "S", function() flash.treesitter() end, { desc = "Flash Treesitter" })
+-- vim.keymap.set("x", "S", function() flash.treesitter() end, { desc = "Flash Treesitter" })
+-- vim.keymap.set("o", "S", function() flash.treesitter() end, { desc = "Flash Treesitter" })
 
 vim.keymap.set("o", "r", function() flash.remote() end, { desc = "Remote Flash" })
 
