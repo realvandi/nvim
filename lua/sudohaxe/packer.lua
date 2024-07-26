@@ -129,7 +129,6 @@ return require('packer').startup(function(use)
 
     use {
         'doctorfree/cheatsheet.nvim',
-
         requires = {
             {'nvim-telescope/telescope.nvim'},
             {'nvim-lua/popup.nvim'},
@@ -143,16 +142,9 @@ return require('packer').startup(function(use)
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-    }
-
+   }
     use {
-        'folke/flash.nvim',
-        event = 'VeryLazy',
-        opts = {}, -- Add any additional configuration options here
-        config = function()
-            require('flash').setup({})
-        end
+        "folke/flash.nvim",
     }
-
 end)
 
