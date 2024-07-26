@@ -60,8 +60,9 @@ local null_ls = require('null-ls')
 
 null_ls.setup({
     sources = {
-        null_ls.builtins.formatting.prettier, -- Add your preferred formatters here
-        null_ls.builtins.diagnostics.eslint, -- Add your preferred linters here
+        null_ls.builtins.formatting.prettier,
+        null_ls.builtins.diagnostics.eslint, 
+        null_ls.builtins.formatting.rustfmt,
     },
     on_attach = function(client, bufnr)
         if client.server_capabilities.documentFormattingProvider then
